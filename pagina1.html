@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pagina 1 | Laboratorio 6</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/estilos.css"></head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark barra"><div class="container">
+<a class="navbar-brand" href="index.html">git<span>/</span>lab6</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="menu"><ul class="navbar-nav ms-auto"><li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li><li class="nav-item"><a class="nav-link active" href="pagina1.html" aria-current="page">Pagina 1</a></li><li class="nav-item"><a class="nav-link" href="pagina2.html">Pagina 2</a></li><li class="nav-item"><a class="nav-link" href="pagina3.html">Pagina 3</a></li></ul></div></div></nav>
+<main class="container py-5">
+<h1 class="titulo">¿Qué es Git?</h1>
+<div class="row g-4 align-items-center mb-4"><div class="col-md-7">
+<p>Git es un sistema de control de versiones: registra los cambios que haces en tus archivos para que puedas revisar el historial, deshacer errores y comparar versiones en cualquier momento.</p>
+<p>A diferencia de guardar copias como «proyecto_final_v2_ahora_si», Git guarda instantáneas ordenadas de todo el proyecto y sabe exactamente qué cambió entre una y otra.</p>
+<p>Además es distribuido: cada persona tiene una copia completa del repositorio, por lo que se puede trabajar sin conexión y sincronizar después con un servidor como GitHub.</p></div>
+<div class="col-md-5"><img src="img/local.svg" class="img-fluid rounded" alt="Una carpeta de trabajo y su repositorio .git"></div></div>
+<div class="row g-4 mb-5"><div class="col-md-6"><img src="img/snapshots.svg" class="img-fluid rounded" alt="Tres instantáneas del proyecto apiladas"></div>
+<div class="col-md-6"><img src="img/distribuido.svg" class="img-fluid rounded" alt="Varias copias del repositorio conectadas a un servidor"></div></div>
+<div class="row g-4"><div class="col-lg-7"><h2 class="sub">Preguntas rápidas</h2>
+<div class="accordion" id="preguntas">
+<div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#q1" aria-expanded="true" aria-controls="q1">¿Git y GitHub son lo mismo?</button></h3>
+<div id="q1" class="accordion-collapse collapse show" data-bs-parent="#preguntas"><div class="accordion-body">No. Git es la herramienta que corre en tu computadora; GitHub es un sitio que aloja repositorios Git en la nube.</div></div></div>
+<div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q2" aria-expanded="false" aria-controls="q2">¿Por qué clonar y no descargar el ZIP?</button></h3>
+<div id="q2" class="accordion-collapse collapse" data-bs-parent="#preguntas"><div class="accordion-body">El ZIP solo trae los archivos. Al clonar también se descarga el historial y la conexión con el remoto.</div></div></div>
+<div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q3" aria-expanded="false" aria-controls="q3">¿Qué es un repositorio?</button></h3>
+<div id="q3" class="accordion-collapse collapse" data-bs-parent="#preguntas"><div class="accordion-body">Una carpeta de proyecto que contiene tus archivos y la carpeta oculta <code>.git</code> con todo el historial.</div></div></div>
+</div></div>
+<div class="col-lg-5"><div class="card tarjeta h-100"><div class="card-body"><span class="badge text-bg-dark mb-2">Dato</span>
+<h2 class="h5">Creado en 2005</h2><p class="mb-0">Linus Torvalds lo creó para gestionar el desarrollo del kernel de Linux.</p></div></div></div></div>
+</main>
+<footer class="pie text-center py-4">Laboratorio 6 · Programación Web · FIME UANL</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+</body></html>

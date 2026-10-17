@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pagina 2 | Laboratorio 6</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/estilos.css"></head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark barra"><div class="container">
+<a class="navbar-brand" href="index.html">git<span>/</span>lab6</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="menu"><ul class="navbar-nav ms-auto"><li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li><li class="nav-item"><a class="nav-link" href="pagina1.html">Pagina 1</a></li><li class="nav-item"><a class="nav-link active" href="pagina2.html" aria-current="page">Pagina 2</a></li><li class="nav-item"><a class="nav-link" href="pagina3.html">Pagina 3</a></li></ul></div></div></nav>
+<main class="container py-5">
+<h1 class="titulo">Commits y ramas</h1>
+<div class="alert alert-warning" role="alert"><strong>Recuerda:</strong> un commit solo guarda lo que está en el área de preparación. Primero <code>git add</code>, después <code>git commit</code>.</div>
+<div class="row g-4 align-items-center mb-4"><div class="col-md-7">
+<p>Un commit es una foto del proyecto en un momento dado, con un mensaje que explica qué cambió y por qué. Una buena costumbre es hacer commits pequeños y con mensajes claros.</p>
+<p>Las ramas permiten trabajar en algo nuevo sin tocar la versión estable. Cada rama es solo un apuntador a un commit, por lo que crearlas es rápido y barato.</p>
+<p>Cuando la función está lista, la rama se une a <code>main</code> con un merge. Si dos personas cambiaron la misma línea, Git avisa del conflicto y tú decides cómo resolverlo.</p></div>
+<div class="col-md-5"><img src="img/commit.svg" class="img-fluid rounded" alt="Cadena de commits con sus identificadores"></div></div>
+<div class="row g-4 mb-5"><div class="col-md-6"><img src="img/rama.svg" class="img-fluid rounded" alt="Una rama que se separa de main"></div>
+<div class="col-md-6"><img src="img/merge.svg" class="img-fluid rounded" alt="Una rama que se une de nuevo a main mediante merge"></div></div>
+<h2 class="sub">Comandos clave</h2>
+<ul class="nav nav-tabs" id="tabs" role="tablist">
+<li class="nav-item" role="presentation"><button class="nav-link active" id="t1" data-bs-toggle="tab" data-bs-target="#c1" type="button" role="tab" aria-controls="c1" aria-selected="true">Guardar</button></li>
+<li class="nav-item" role="presentation"><button class="nav-link" id="t2" data-bs-toggle="tab" data-bs-target="#c2" type="button" role="tab" aria-controls="c2" aria-selected="false">Ramas</button></li>
+<li class="nav-item" role="presentation"><button class="nav-link" id="t3" data-bs-toggle="tab" data-bs-target="#c3" type="button" role="tab" aria-controls="c3" aria-selected="false">Revisar</button></li></ul>
+<div class="tab-content panel-tab p-3">
+<div class="tab-pane fade show active" id="c1" role="tabpanel" aria-labelledby="t1"><pre class="mb-0"><code>git status
+git add -A
+git commit -m "Describe el cambio"</code></pre></div>
+<div class="tab-pane fade" id="c2" role="tabpanel" aria-labelledby="t2"><pre class="mb-0"><code>git branch nueva-funcion
+git switch nueva-funcion
+git merge nueva-funcion</code></pre></div>
+<div class="tab-pane fade" id="c3" role="tabpanel" aria-labelledby="t3"><pre class="mb-0"><code>git log --oneline
+git diff
+git status</code></pre></div></div>
+</main>
+<footer class="pie text-center py-4">Laboratorio 6 · Programación Web · FIME UANL</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+</body></html>
